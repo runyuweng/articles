@@ -1,2 +1,2 @@
 # articles
-personal articles
+personal articles & demo
