@@ -1,6 +1,6 @@
 # js数据类型
 首先来看一个例子：
-```
+```js
 // 原始类型
 var a = 'Hi';
 var b = a;
@@ -29,7 +29,7 @@ js有五种原始类型：
 - undefined，未定义类型，值为`undefined`  
 
 鉴别原始类型可以使用`typeof`方法，除了`null`，当使用
-```
+```js
 console.log(typeof null);
 ```
 会输出"object",因此当检验`null`时可以使用"==="。
@@ -39,7 +39,7 @@ console.log(typeof null);
 如果一个属性的值为函数，即可称他为`方法`。
 ### 2.1对象实例化
 大家应该都清楚，一般对象如何实例化：  
-```
+```js
 var obj = new Object()；
 obj.a = "a"； //为其添加属性
 obj = null； //不适用对象时对其引用进行解除，释放内存
@@ -47,19 +47,19 @@ obj = null； //不适用对象时对其引用进行解除，释放内存
 ### 2.2如何鉴别引用类型
 function可使用typeof方法来鉴别，  
 而其他引用类型则需要使用instanceof方法了，例如
-```
+```js
 var arr = new Array();
 console.log(arr instanceof Array); //true
 ```
 ### 2.3原始封装类型
 下面再来看一段代码，js刚刚接触的同学可能就会产生疑惑：
-```
+```js
 var str = "hello";
 var firstChar = str.charAt(0)  //H
 ```
 为什么原始类型的数据也会有方法可以调用呢？  
 其实js引擎在背后做了这些事：
-```
+```js
 var str = "hello";
 var temp = new String(str);
 var firstChar = temp.charAt(0);
