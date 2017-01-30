@@ -6,7 +6,8 @@ react的生命周期主要分为三个大的阶段，
 带有will前缀的方法指在事件发生前调用，  
 而带有did前缀的方法指在事件发生后调用。  
 
-具体流程图如下：
+具体流程图如下：  
+
 ![](../img/lifecycle.jpg)
 ## 1. Mounting -- 装载
 ### 1.1 componentWillMount
